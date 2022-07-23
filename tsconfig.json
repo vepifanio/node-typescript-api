@@ -9,6 +9,7 @@
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
+    "skipLibCheck": true,
     "strictFunctionTypes": true,
     "noImplicitThis": true,
     "resolveJsonModule": true,

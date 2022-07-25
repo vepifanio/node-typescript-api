@@ -36,3 +36,12 @@ jobs:
 
       - name: Run all tests
         run: yarn test
+
+      - name: Deploy Application
+        if: ${{ github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' }}
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: 'victor-dev-lab'
+          heroku_email: 'vepifanio1@gmail.com'
+          buildpack: 'https://github.com/zidizei/heroku-buildpack-tsc#v2.0'

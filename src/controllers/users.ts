@@ -1,10 +1,4 @@
-import {
-  ClassMiddleware,
-  Controller,
-  Get,
-  Middleware,
-  Post,
-} from '@overnightjs/core';
+import { Controller, Get, Middleware, Post } from '@overnightjs/core';
 import { Request, Response } from 'express';
 import { User } from '@src/models/user';
 import { BaseController } from '.';

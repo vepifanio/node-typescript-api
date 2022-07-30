@@ -244,6 +244,21 @@
                 }
               }
             }
+          },
+          "429": {
+            "description": "Too many requests",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                },
+                "example": {
+                  "message": "Too many request do the /forecast endpoint",
+                  "code": "429",
+                  "error": "Too Many Requests"
+                }
+              }
+            }
           }
         }
       }

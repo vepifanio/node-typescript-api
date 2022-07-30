@@ -1,3 +1,3 @@
-declare const testRequest: import('supertest').SuperTest<
+declare var testRequest: import('supertest').SuperTest<
   import('supertest').Test
 >;

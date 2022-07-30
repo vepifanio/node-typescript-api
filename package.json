@@ -7,7 +7,7 @@
     "build": "tsc",
     "start": "node dist/src/index.js",
     "start:dev": "ts-node-dev --files 'src/index.ts' | pino-pretty -c",
-    "test": "yarn lint && yarn test:unit && yarn test:functional",
+    "test": "yarn test:unit && yarn test:functional",
     "test:functional": "jest --projects ./test --runInBand",
     "test:unit": "jest",
     "lint": "eslint ./src ./test --ext .ts",
